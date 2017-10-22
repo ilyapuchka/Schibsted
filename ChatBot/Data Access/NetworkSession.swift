@@ -17,9 +17,9 @@ extension NetworkSession {
         return Promise<T>(work: { (completed, failed) in
             self.request(request) { (decoded: T?, _, _, error) in
                 if let error = error {
-                    DispatchQueue.main.async { failed(error) }
+                    failed(error)
                 } else if let decoded = decoded {
-                    DispatchQueue.main.async { completed(decoded) }
+                    completed(decoded)
                 }
             }
         })

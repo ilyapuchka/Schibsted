@@ -36,8 +36,7 @@ class RootViewController: UIViewController, SeguePerformer, RootFlowController {
     lazy var segueManager: SegueManager = SegueManager(viewController: self)
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        guard isViewAppeared else { return false }
-        return true
+        return isViewAppeared
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

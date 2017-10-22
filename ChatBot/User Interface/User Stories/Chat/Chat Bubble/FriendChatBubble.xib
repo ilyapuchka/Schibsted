@@ -21,10 +21,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xm9-iz-3qn">
-                        <rect key="frame" x="8" y="8" width="297" height="71.5"/>
+                        <rect key="frame" x="8" y="8" width="77.5" height="71.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoN-91-nTX">
-                                <rect key="frame" x="8" y="8" width="281" height="37"/>
+                                <rect key="frame" x="8" y="8" width="61.5" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Cqg-1D-lMh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -47,7 +50,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPm-fs-6pl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPm-fs-6pl">
                                 <rect key="frame" x="38" y="52.5" width="31" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,6 +67,7 @@
                             <constraint firstItem="SoN-91-nTX" firstAttribute="leading" secondItem="Xm9-iz-3qn" secondAttribute="leading" constant="8" id="ecO-15-eza"/>
                             <constraint firstItem="nat-XT-9g6" firstAttribute="top" secondItem="SoN-91-nTX" secondAttribute="bottom" id="fSC-sO-pPP"/>
                             <constraint firstItem="SoN-91-nTX" firstAttribute="top" secondItem="Xm9-iz-3qn" secondAttribute="top" constant="8" id="jvX-id-ObB"/>
+                            <constraint firstAttribute="trailing" secondItem="cPm-fs-6pl" secondAttribute="trailing" constant="8" id="pWY-8Q-YEo"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -73,7 +77,7 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="Xm9-iz-3qn" secondAttribute="trailing" constant="50" id="6DZ-CC-kdm"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Xm9-iz-3qn" secondAttribute="trailing" constant="50" id="6DZ-CC-kdm"/>
                     <constraint firstItem="Xm9-iz-3qn" firstAttribute="top" secondItem="6fc-CV-zV1" secondAttribute="topMargin" id="DVW-IF-Wfx"/>
                     <constraint firstItem="Xm9-iz-3qn" firstAttribute="leading" secondItem="6fc-CV-zV1" secondAttribute="leadingMargin" id="evc-eL-rxx"/>
                     <constraint firstItem="Xm9-iz-3qn" firstAttribute="bottom" secondItem="6fc-CV-zV1" secondAttribute="bottomMargin" id="nuq-tc-4PB"/>
