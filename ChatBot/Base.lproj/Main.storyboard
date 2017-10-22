@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,33 +22,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAx-6K-FHm">
-                                <rect key="frame" x="207" y="386" width="187" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhI-ep-68j">
-                                <rect key="frame" x="277" y="442" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <action selector="showChat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwX-aM-bMt"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sch-background" translatesAutoresizingMaskIntoConstraints="NO" id="Rv5-iA-QP6">
-                                <rect key="frame" x="180" y="187" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your user name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axm-ar-vou">
-                                <rect key="frame" x="180" y="349" width="248" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G1I-r7-WjZ">
+                                <rect key="frame" x="27.5" y="181.5" width="320" height="304.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="sch-background" translatesAutoresizingMaskIntoConstraints="NO" id="Rv5-iA-QP6">
+                                        <rect key="frame" x="16" y="16" width="288" height="144"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="144" id="EAq-T4-VdL"/>
+                                            <constraint firstAttribute="width" secondItem="Rv5-iA-QP6" secondAttribute="height" multiplier="2:1" id="n2L-cM-Gd3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your user name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axm-ar-vou">
+                                        <rect key="frame" x="78.5" y="176" width="163.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAx-6K-FHm">
+                                        <rect key="frame" x="16" y="212.5" width="288" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhI-ep-68j">
+                                        <rect key="frame" x="141" y="258.5" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="showChat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwX-aM-bMt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XAx-6K-FHm" firstAttribute="width" secondItem="Rv5-iA-QP6" secondAttribute="width" id="H3a-0f-SZh"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="G1I-r7-WjZ" secondAttribute="bottom" id="1fO-nS-mqh"/>
+                            <constraint firstItem="G1I-r7-WjZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7YX-8U-Vbd"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="G1I-r7-WjZ" secondAttribute="trailing" constant="16" id="Bz9-UB-bg8"/>
+                            <constraint firstItem="G1I-r7-WjZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="cVb-dF-nEr"/>
+                            <constraint firstItem="G1I-r7-WjZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tTU-ya-uTT"/>
+                            <constraint firstItem="G1I-r7-WjZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uRO-W4-xwH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="Y4o-yt-zyc" kind="show" identifier="gotoChat" id="ChE-pS-tLZ"/>
@@ -55,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="185"/>
+            <point key="canvasLocation" x="488.80000000000001" y="184.85757121439281"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="aj7-fW-1St">
