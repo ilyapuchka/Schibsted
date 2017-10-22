@@ -22,9 +22,13 @@ class ChatService {
         self.networkSession = networkSession
     }
     
-    func getChatMessages(_ completion: @escaping ([Message]?, Error?) -> Void) {
-        networkSession.request(.chatsRequest()) { (decoded: [String: [Message]]?, _, _, error) in
-            completion(decoded?["chats"], error)
+    func getChatMessages() -> Promise<[Message]> {
+        return networkSession.request(.chatsRequest()).then { (chats: [String: [Message]]) throws -> [Message] in
+            if let messages = chats["chats"] {
+                return messages
+            } else {
+                throw URLError(URLError.badServerResponse)
+            }
         }
     }
 }

@@ -12,8 +12,6 @@ class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
-//            tableView.estimatedRowHeight = 150
-//            tableView.rowHeight = UITableViewAutomaticDimension
             tableView.register(UINib(nibName: "ChatBubble", bundle: nil), forCellReuseIdentifier: "ChatBubble")
         }
     }
@@ -24,8 +22,7 @@ class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        service.getChatMessages { [weak self] (messages, error) in
-            guard let messages = messages else { return }
+        service.getChatMessages().then { [weak self] (messages) in
             self?.messages = messages
             self?.tableView.reloadData()
         }

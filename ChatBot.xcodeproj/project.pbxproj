@@ -12,6 +12,8 @@
 		630013BA1F9CBEF600C68B29 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013B91F9CBEF600C68B29 /* NetworkSession.swift */; };
 		630013BC1F9CBF1800C68B29 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013BB1F9CBF1800C68B29 /* RequestBuilder.swift */; };
 		630013BE1F9CBF2700C68B29 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013BD1F9CBF2700C68B29 /* ChatService.swift */; };
+		630013C01F9CCAD000C68B29 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013BF1F9CCAD000C68B29 /* Promise.swift */; };
+		630013C21F9CCAEA00C68B29 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013C11F9CCAEA00C68B29 /* ImageLoader.swift */; };
 		94182B5C1CC9139800194DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5B1CC9139800194DF7 /* AppDelegate.swift */; };
 		94182B5E1CC9139800194DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5D1CC9139800194DF7 /* ViewController.swift */; };
 		94182B611CC9139800194DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94182B5F1CC9139800194DF7 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		630013B91F9CBEF600C68B29 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
 		630013BB1F9CBF1800C68B29 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		630013BD1F9CBF2700C68B29 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		630013BF1F9CCAD000C68B29 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		630013C11F9CCAEA00C68B29 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		94182B581CC9139700194DF7 /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94182B5B1CC9139800194DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94182B5D1CC9139800194DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				94E23D491CCA20CA00BAC252 /* ChatBubble.xib */,
 				94E23D4B1CCA260700BAC252 /* ChatBubble.swift */,
 				94E23D4D1CCA355800BAC252 /* Message.swift */,
+				630013BF1F9CCAD000C68B29 /* Promise.swift */,
+				630013C11F9CCAEA00C68B29 /* ImageLoader.swift */,
 			);
 			path = ChatBot;
 			sourceTree = "<group>";
@@ -288,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94182B5E1CC9139800194DF7 /* ViewController.swift in Sources */,
+				630013C01F9CCAD000C68B29 /* Promise.swift in Sources */,
+				630013C21F9CCAEA00C68B29 /* ImageLoader.swift in Sources */,
 				630013B41F9CA98A00C68B29 /* IBInspectable.swift in Sources */,
 				630013B61F9CB9C200C68B29 /* KeyboardObserver.swift in Sources */,
 				630013BE1F9CBF2700C68B29 /* ChatService.swift in Sources */,

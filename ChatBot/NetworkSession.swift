@@ -12,6 +12,20 @@ protocol NetworkSession {
     func request<T: Decodable>(_ request: URLRequest, completion: @escaping (T?, Data?, HTTPURLResponse?, Error?) -> Void)
 }
 
+extension NetworkSession {
+    func request<T: Decodable>(_ request: URLRequest) -> Promise<T> {
+        return Promise<T>(work: { (completed, failed) in
+            self.request(request) { (decoded: T?, _, _, error) in
+                if let error = error {
+                    DispatchQueue.main.async { failed(error) }
+                } else if let decoded = decoded {
+                    DispatchQueue.main.async { completed(decoded) }
+                }
+            }
+        })
+    }
+}
+
 extension URLSession: NetworkSession {
     func request<T: Decodable>(_ request: URLRequest, completion: @escaping (T?, Data?, HTTPURLResponse?, Error?) -> Void) {
         dataTask(with: request, completionHandler: dataTaskCompletionHandler(completion)).resume()
