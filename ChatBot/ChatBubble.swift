@@ -28,12 +28,10 @@ class ChatBubble : UITableViewCell {
 
         self.background.layer.cornerRadius = 8
         self.background.layer.masksToBounds = true
-
     }
     
-    
-    func updateChatBubble(message : Message){
-    
-        
+    func updateChatBubble(message : Message) {
+        userName.text = message.username
+        bubbleContent.text = message.content
     }
 }

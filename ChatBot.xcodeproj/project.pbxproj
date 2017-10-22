@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		630013B41F9CA98A00C68B29 /* IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013B31F9CA98A00C68B29 /* IBInspectable.swift */; };
 		630013B61F9CB9C200C68B29 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013B51F9CB9C200C68B29 /* KeyboardObserver.swift */; };
+		630013BA1F9CBEF600C68B29 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013B91F9CBEF600C68B29 /* NetworkSession.swift */; };
+		630013BC1F9CBF1800C68B29 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013BB1F9CBF1800C68B29 /* RequestBuilder.swift */; };
+		630013BE1F9CBF2700C68B29 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013BD1F9CBF2700C68B29 /* ChatService.swift */; };
 		94182B5C1CC9139800194DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5B1CC9139800194DF7 /* AppDelegate.swift */; };
 		94182B5E1CC9139800194DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5D1CC9139800194DF7 /* ViewController.swift */; };
 		94182B611CC9139800194DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94182B5F1CC9139800194DF7 /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 /* Begin PBXFileReference section */
 		630013B31F9CA98A00C68B29 /* IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectable.swift; sourceTree = "<group>"; };
 		630013B51F9CB9C200C68B29 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		630013B91F9CBEF600C68B29 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		630013BB1F9CBF1800C68B29 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		630013BD1F9CBF2700C68B29 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		94182B581CC9139700194DF7 /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94182B5B1CC9139800194DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94182B5D1CC9139800194DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 			children = (
 				94182B5B1CC9139800194DF7 /* AppDelegate.swift */,
 				94182B891CC9371A00194DF7 /* ChatViewController.swift */,
+				630013B91F9CBEF600C68B29 /* NetworkSession.swift */,
+				630013BB1F9CBF1800C68B29 /* RequestBuilder.swift */,
+				630013BD1F9CBF2700C68B29 /* ChatService.swift */,
 				94182B5D1CC9139800194DF7 /* ViewController.swift */,
 				630013B31F9CA98A00C68B29 /* IBInspectable.swift */,
 				630013B51F9CB9C200C68B29 /* KeyboardObserver.swift */,
@@ -211,7 +220,6 @@
 				TargetAttributes = {
 					94182B571CC9139700194DF7 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = NC72984Q22;
 						LastSwiftMigration = 0800;
 					};
 					94182B6B1CC9139800194DF7 = {
@@ -282,8 +290,11 @@
 				94182B5E1CC9139800194DF7 /* ViewController.swift in Sources */,
 				630013B41F9CA98A00C68B29 /* IBInspectable.swift in Sources */,
 				630013B61F9CB9C200C68B29 /* KeyboardObserver.swift in Sources */,
+				630013BE1F9CBF2700C68B29 /* ChatService.swift in Sources */,
+				630013BC1F9CBF1800C68B29 /* RequestBuilder.swift in Sources */,
 				94182B8A1CC9371A00194DF7 /* ChatViewController.swift in Sources */,
 				94E23D4E1CCA355800BAC252 /* Message.swift in Sources */,
+				630013BA1F9CBEF600C68B29 /* NetworkSession.swift in Sources */,
 				94182B5C1CC9139800194DF7 /* AppDelegate.swift in Sources */,
 				94E23D4C1CCA260700BAC252 /* ChatBubble.swift in Sources */,
 			);
@@ -429,7 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NC72984Q22;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChatBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.chatbot.ChatBot;
@@ -442,7 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NC72984Q22;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChatBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.chatbot.ChatBot;

@@ -8,13 +8,15 @@
 
 import Foundation
 
-class Message {
+struct Message: Decodable {
 
-    var name : String!
-
-    var time : String!
-
-    init?(){
+    var username : String
+    var time : String
+    var userImageURL: URL
+    var content: String
+    
+    enum CodingKeys: String, CodingKey {
+        case username, time, userImageURL = "userImage_url", content
     }
     
 }

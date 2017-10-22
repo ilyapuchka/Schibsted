@@ -8,20 +8,25 @@
 
 import UIKit
 
-
-
-let serverURL =  "https://s3-eu-west-1.amazonaws.com/rocket-interview/chat.json"
-
 class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-  
-
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.register(UINib(nibName: "ChatBubble", bundle: nil), forCellReuseIdentifier: "ChatBubble")
+        }
+    }
     
+    var service: ChatService = ChatService(networkSession: URLSession.shared)
     var messages = [Message]()
     
     override func viewDidLoad() {
-           
+        super.viewDidLoad()
+        
+        service.getChatMessages { [weak self] (messages, error) in
+            guard let messages = messages else { return }
+            self?.messages = messages
+            self?.tableView.reloadData()
+        }
     }
 
     //MARK - UITableViewDataSource
@@ -30,10 +35,8 @@ class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return self.messages.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let message = self.messages[indexPath.row]
