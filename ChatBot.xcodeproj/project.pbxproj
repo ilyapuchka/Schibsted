@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630013B41F9CA98A00C68B29 /* IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013B31F9CA98A00C68B29 /* IBInspectable.swift */; };
+		630013B61F9CB9C200C68B29 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013B51F9CB9C200C68B29 /* KeyboardObserver.swift */; };
 		94182B5C1CC9139800194DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5B1CC9139800194DF7 /* AppDelegate.swift */; };
 		94182B5E1CC9139800194DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5D1CC9139800194DF7 /* ViewController.swift */; };
 		94182B611CC9139800194DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94182B5F1CC9139800194DF7 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630013B31F9CA98A00C68B29 /* IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectable.swift; sourceTree = "<group>"; };
+		630013B51F9CB9C200C68B29 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		94182B581CC9139700194DF7 /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94182B5B1CC9139800194DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94182B5D1CC9139800194DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				94182B5B1CC9139800194DF7 /* AppDelegate.swift */,
 				94182B891CC9371A00194DF7 /* ChatViewController.swift */,
 				94182B5D1CC9139800194DF7 /* ViewController.swift */,
+				630013B31F9CA98A00C68B29 /* IBInspectable.swift */,
+				630013B51F9CB9C200C68B29 /* KeyboardObserver.swift */,
 				94182B5F1CC9139800194DF7 /* Main.storyboard */,
 				94182B621CC9139800194DF7 /* Assets.xcassets */,
 				94182B641CC9139800194DF7 /* LaunchScreen.storyboard */,
@@ -274,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94182B5E1CC9139800194DF7 /* ViewController.swift in Sources */,
+				630013B41F9CA98A00C68B29 /* IBInspectable.swift in Sources */,
+				630013B61F9CB9C200C68B29 /* KeyboardObserver.swift in Sources */,
 				94182B8A1CC9371A00194DF7 /* ChatViewController.swift in Sources */,
 				94E23D4E1CCA355800BAC252 /* Message.swift in Sources */,
 				94182B5C1CC9139800194DF7 /* AppDelegate.swift in Sources */,
