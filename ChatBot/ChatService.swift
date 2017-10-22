@@ -16,10 +16,21 @@ extension URLRequest {
     }
 }
 
-class ChatService {
+protocol ChatService {
+    func getChatMessages() -> Promise<[Message]>
+    
+    func login(username: String)
+    func logout()
+    func currentUser() -> String?
+}
+
+class ChatServiceImp: ChatService {
     let networkSession: NetworkSession
-    init(networkSession: NetworkSession) {
+    let userDefaults: UserDefaults
+    
+    init(networkSession: NetworkSession, userDefaults: UserDefaults) {
         self.networkSession = networkSession
+        self.userDefaults = userDefaults
     }
     
     func getChatMessages() -> Promise<[Message]> {
@@ -31,4 +42,26 @@ class ChatService {
             }
         }
     }
+    
+    func login(username: String) {
+        userDefaults.username = username
+    }
+    
+    func logout() {
+        userDefaults.username = nil
+    }
+    
+    func currentUser() -> String? {
+        return userDefaults.username
+    }
+    
+}
+
+extension UserDefaults {
+    
+    var username: String? {
+        get { return value(forKey: #function) as? String }
+        set { setValue(newValue, forKey: #function) }
+    }
+    
 }

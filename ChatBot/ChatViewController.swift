@@ -23,13 +23,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var keyboardObservers: [Any] = []
     
-    var service: ChatService = ChatService(networkSession: URLSession.shared)
+    var service: ChatService = ChatServiceImp(networkSession: URLSession.shared, userDefaults: UserDefaults.standard)
+    
     //var model = ChatModel(messages: [])
     var messages = [Message]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Chat - \(service.currentUser()!)"
         inputChanged(nil)
         
         service.getChatMessages().then { [weak self] (messages) in
@@ -106,7 +108,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.insertRows(at: [indexPath], with: .fade)
         self.messages += [
             Message(
-                username: UserDefaults.standard.value(forKey: "username") as! String,
+                username: service.currentUser()!,
                 time: "now",
                 userImageURL: nil,
                 content: text)
@@ -116,6 +118,12 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = self.tableView.cellForRow(at: indexPath)!
             self.tableView.contentOffset.y += cell.frame.size.height
         }
+    }
+    
+    @IBAction func logout() {
+        inputTextField.resignFirstResponder()
+        service.logout()
+        dismiss(animated: true, completion: nil)
     }
     
 }
