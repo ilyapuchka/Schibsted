@@ -12,7 +12,7 @@ struct Message: Decodable {
 
     var username : String
     var time : String
-    var userImageURL: URL
+    var userImageURL: URL?
     var content: String
     
     enum CodingKeys: String, CodingKey {

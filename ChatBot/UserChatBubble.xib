@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ChatBubble" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserChatBubble" rowHeight="88" id="8eQ-rf-d1v" customClass="UserChatBubble" customModule="ChatBot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8eQ-rf-d1v" id="kbu-GG-u4H">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-9N-ShP">
+                        <rect key="frame" x="58" y="8" width="297" height="71.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Content" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRR-8Z-0FU">
+                                <rect key="frame" x="8" y="8" width="281" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgz-1y-gKg">
+                                <rect key="frame" x="258" y="52.5" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZRR-8Z-0FU" firstAttribute="top" secondItem="bVu-9N-ShP" secondAttribute="top" constant="8" id="2Wy-Di-abG"/>
+                            <constraint firstAttribute="trailing" secondItem="ZRR-8Z-0FU" secondAttribute="trailing" constant="8" id="IcA-dc-bcY"/>
+                            <constraint firstItem="ZRR-8Z-0FU" firstAttribute="leading" secondItem="bVu-9N-ShP" secondAttribute="leading" constant="8" id="LxO-cx-QOh"/>
+                            <constraint firstItem="Kgz-1y-gKg" firstAttribute="top" secondItem="ZRR-8Z-0FU" secondAttribute="bottom" id="aEl-ax-Ooo"/>
+                            <constraint firstAttribute="bottom" secondItem="Kgz-1y-gKg" secondAttribute="bottom" constant="4" id="gD6-T9-7cC"/>
+                            <constraint firstItem="Kgz-1y-gKg" firstAttribute="trailing" secondItem="ZRR-8Z-0FU" secondAttribute="trailing" id="gLt-uO-Mey"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="bVu-9N-ShP" secondAttribute="trailing" id="Qrf-XB-JCV"/>
+                    <constraint firstItem="bVu-9N-ShP" firstAttribute="bottom" secondItem="kbu-GG-u4H" secondAttribute="bottomMargin" id="aNj-uQ-k6F"/>
+                    <constraint firstItem="bVu-9N-ShP" firstAttribute="leading" secondItem="kbu-GG-u4H" secondAttribute="leadingMargin" constant="50" id="bZB-sG-qMV"/>
+                    <constraint firstItem="bVu-9N-ShP" firstAttribute="top" secondItem="kbu-GG-u4H" secondAttribute="topMargin" id="lV6-81-G9L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bubbleContent" destination="ZRR-8Z-0FU" id="CVr-5k-hdU"/>
+                <outlet property="userName" destination="Kgz-1y-gKg" id="Own-SA-pdP"/>
+            </connections>
+            <point key="canvasLocation" x="211.5" y="306"/>
+        </tableViewCell>
+    </objects>
+</document>

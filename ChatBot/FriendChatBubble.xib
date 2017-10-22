@@ -13,14 +13,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ChatBubble" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatBubble" rowHeight="88" id="CQl-n4-Tc2" customClass="ChatBubble" customModule="ChatBot" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ChatBubble" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendChatBubble" rowHeight="88" id="CQl-n4-Tc2" customClass="FriendChatBubble" customModule="ChatBot" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="363" height="88"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CQl-n4-Tc2" id="6fc-CV-zV1">
                 <rect key="frame" x="0.0" y="0.0" width="363" height="87.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xm9-iz-3qn">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xm9-iz-3qn">
                         <rect key="frame" x="8" y="8" width="297" height="71.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoN-91-nTX">
@@ -40,7 +40,7 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,7 +60,7 @@
                             <constraint firstAttribute="bottom" secondItem="nat-XT-9g6" secondAttribute="bottom" constant="-3.5" id="Q6e-Kh-EHq"/>
                             <constraint firstItem="cPm-fs-6pl" firstAttribute="leading" secondItem="nat-XT-9g6" secondAttribute="trailing" constant="8" id="TuE-l1-73d"/>
                             <constraint firstAttribute="trailing" secondItem="SoN-91-nTX" secondAttribute="trailing" constant="8" id="agI-ed-Z5n"/>
-                            <constraint firstItem="cPm-fs-6pl" firstAttribute="centerY" secondItem="nat-XT-9g6" secondAttribute="centerY" id="cuh-RG-JNb"/>
+                            <constraint firstAttribute="bottom" secondItem="cPm-fs-6pl" secondAttribute="bottom" constant="4" id="eDk-w9-0Bx"/>
                             <constraint firstItem="SoN-91-nTX" firstAttribute="leading" secondItem="Xm9-iz-3qn" secondAttribute="leading" constant="8" id="ecO-15-eza"/>
                             <constraint firstItem="nat-XT-9g6" firstAttribute="top" secondItem="SoN-91-nTX" secondAttribute="bottom" id="fSC-sO-pPP"/>
                             <constraint firstItem="SoN-91-nTX" firstAttribute="top" secondItem="Xm9-iz-3qn" secondAttribute="top" constant="8" id="jvX-id-ObB"/>
