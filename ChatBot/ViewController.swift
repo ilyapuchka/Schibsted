@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func showChat(sender: AnyObject) {
-        self.performSegue(withIdentifier: "gotoCha", sender: nil)
+    @IBAction func showChat(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "gotoChat", sender: nil)
     }
 
 }
