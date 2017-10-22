@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NextGrowingTextView
 
 class ChatViewController: UIViewController, KeyboardObserver {
     
@@ -17,7 +18,19 @@ class ChatViewController: UIViewController, KeyboardObserver {
         }
     }
     @IBOutlet weak var sendButton: UIButton!
-    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var inputTextView: NextGrowingTextView! {
+        didSet {
+            inputTextView.maxNumberOfLines = 5
+            inputTextView.placeholderAttributedText = NSAttributedString(
+                string: NSLocalizedString("Type something", comment: ""),
+                attributes: [
+                    NSAttributedStringKey.font: inputTextView.textView.font!,
+                    NSAttributedStringKey.foregroundColor: UIColor.lightGray
+                ]
+            )
+            inputTextView.textView.delegate = self
+        }
+    }
     @IBOutlet var inputViewBottomConstraint: NSLayoutConstraint!
     
     var keyboardObservers: [Any] = []
@@ -31,7 +44,7 @@ class ChatViewController: UIViewController, KeyboardObserver {
         super.viewDidLoad()
         
         title = String(format: "%@ - \(service.currentUser()!)", NSLocalizedString("Chat", comment: "Chat title"))
-        inputChanged(nil)
+        textViewDidChange(inputTextView.textView)
         
         service.getChatMessages().then { [weak self] (messages) in
             self?.messages = messages
@@ -70,7 +83,7 @@ class ChatViewController: UIViewController, KeyboardObserver {
     }
     
     @IBAction func tapped(_ sender: UITapGestureRecognizer) {
-        inputTextField.resignFirstResponder()
+        _ = inputTextView.resignFirstResponder()
     }
     
 }
@@ -80,17 +93,15 @@ class ChatViewController: UIViewController, KeyboardObserver {
 extension ChatViewController {
 
     @IBAction func sendMessage(_ sender: UIButton?) {
-        guard let text = inputTextField.text, !text.isEmpty else { return }
+        guard let text = inputTextView.textView.text, !text.isEmpty else { return }
         
-        inputTextField.text = ""
-        inputChanged(inputTextField)
-        
+        inputTextView.textView.text = ""
         insertMessage(Message(username: service.currentUser()!, time: "now", userImageURL: nil, content: text),
                       at: IndexPath(row: messages.count, section: 0))
     }
     
     @IBAction func logout() {
-        inputTextField.resignFirstResponder()
+        inputTextView.textView.resignFirstResponder()
         service.logout()
         flowController?.logout()
     }
@@ -99,21 +110,15 @@ extension ChatViewController {
 
 // MARK: - Text Input
 
-extension ChatViewController: UITextFieldDelegate {
+extension ChatViewController: UITextViewDelegate {
     
     var inputViewHeight: CGFloat {
-        return inputTextField.superview?.frame.height ?? 0
+        return inputTextView.superview?.frame.height ?? 0
     }
 
-    @IBAction func inputChanged(_ sender: UITextField?) {
-        sendButton.isEnabled = sender?.text?.isEmpty == false
+    func textViewDidChange(_ textView: UITextView) {
+        sendButton.isEnabled = textView.text?.isEmpty == false
     }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        sendMessage(nil)
-        return true
-    }
-
 }
 
 // MARK: - Table View

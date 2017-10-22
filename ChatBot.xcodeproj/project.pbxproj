@@ -25,6 +25,7 @@
 		638150831F9D0FF40040E7FB /* ChatNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638150821F9D0FF40040E7FB /* ChatNavigationController.swift */; };
 		638150851F9D10F20040E7FB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638150841F9D10F20040E7FB /* RootViewController.swift */; };
 		638150871F9D11210040E7FB /* SegueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638150861F9D11210040E7FB /* SegueManager.swift */; };
+		638150891F9D365F0040E7FB /* NextGrowingTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638150881F9D365F0040E7FB /* NextGrowingTextView.framework */; };
 		94182B5C1CC9139800194DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5B1CC9139800194DF7 /* AppDelegate.swift */; };
 		94182B5E1CC9139800194DF7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5D1CC9139800194DF7 /* LoginViewController.swift */; };
 		94182B611CC9139800194DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94182B5F1CC9139800194DF7 /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		638150821F9D0FF40040E7FB /* ChatNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatNavigationController.swift; sourceTree = "<group>"; };
 		638150841F9D10F20040E7FB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		638150861F9D11210040E7FB /* SegueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueManager.swift; sourceTree = "<group>"; };
+		638150881F9D365F0040E7FB /* NextGrowingTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NextGrowingTextView.framework; path = Carthage/Build/iOS/NextGrowingTextView.framework; sourceTree = "<group>"; };
 		94182B581CC9139700194DF7 /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94182B5B1CC9139800194DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94182B5D1CC9139800194DF7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638150891F9D365F0040E7FB /* NextGrowingTextView.framework in Frameworks */,
 				630013CA1F9CD62A00C68B29 /* Rswift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +125,7 @@
 		630013C81F9CD62900C68B29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				638150881F9D365F0040E7FB /* NextGrowingTextView.framework */,
 				630013C91F9CD62A00C68B29 /* Rswift.framework */,
 			);
 			name = Frameworks;
@@ -445,6 +449,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NextGrowingTextView.framework",
 			);
 			name = Carthage;
 			outputPaths = (
