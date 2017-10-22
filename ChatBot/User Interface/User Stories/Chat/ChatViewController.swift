@@ -23,7 +23,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var keyboardObservers: [Any] = []
     
-    var service: ChatService = ChatServiceImp(networkSession: URLSession.shared, userDefaults: UserDefaults.standard)
+    var service: ChatService!
+    weak var flowController: ChatFlowController?
     
     //var model = ChatModel(messages: [])
     var messages = [Message]()
@@ -123,7 +124,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func logout() {
         inputTextField.resignFirstResponder()
         service.logout()
-        dismiss(animated: true, completion: nil)
+        flowController?.logout()
     }
     
 }

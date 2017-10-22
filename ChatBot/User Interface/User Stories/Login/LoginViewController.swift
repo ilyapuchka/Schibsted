@@ -8,19 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, KeyboardObserver {
+class LoginViewController: UIViewController, UITextFieldDelegate, KeyboardObserver {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var verticalConstraint: NSLayoutConstraint!
     
-    var service: ChatService = ChatServiceImp(networkSession: URLSession.shared, userDefaults: UserDefaults.standard)
+    var service: ChatService!
+    weak var flowController: RootFlowController?
 
     @IBAction func showChat(_ sender: AnyObject?) {
         guard let username = textField.text, !username.isEmpty else { return }
         
         service.login(username: username)
-        self.performSegue(withIdentifier: "gotoChat", sender: nil)
+        flowController?.showChat()
     }
     
     var keyboardObservers: [Any] = []

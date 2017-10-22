@@ -18,8 +18,15 @@
 		630013C61F9CD58500C68B29 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013C51F9CD58500C68B29 /* ListView.swift */; };
 		630013CA1F9CD62A00C68B29 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630013C91F9CD62A00C68B29 /* Rswift.framework */; };
 		630013CE1F9CD73700C68B29 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630013CD1F9CD73700C68B29 /* R.generated.swift */; };
+		631AFA0F1F9D0D2900867C15 /* MessagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631AFA0E1F9D0D2900867C15 /* MessagesRepository.swift */; };
+		631AFA111F9D0D7E00867C15 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631AFA101F9D0D7E00867C15 /* UserRepository.swift */; };
+		6381507F1F9D0F7D0040E7FB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6381507E1F9D0F7D0040E7FB /* Login.storyboard */; };
+		638150811F9D0FA80040E7FB /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638150801F9D0FA80040E7FB /* Chat.storyboard */; };
+		638150831F9D0FF40040E7FB /* ChatNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638150821F9D0FF40040E7FB /* ChatNavigationController.swift */; };
+		638150851F9D10F20040E7FB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638150841F9D10F20040E7FB /* RootViewController.swift */; };
+		638150871F9D11210040E7FB /* SegueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638150861F9D11210040E7FB /* SegueManager.swift */; };
 		94182B5C1CC9139800194DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5B1CC9139800194DF7 /* AppDelegate.swift */; };
-		94182B5E1CC9139800194DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5D1CC9139800194DF7 /* ViewController.swift */; };
+		94182B5E1CC9139800194DF7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5D1CC9139800194DF7 /* LoginViewController.swift */; };
 		94182B611CC9139800194DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94182B5F1CC9139800194DF7 /* Main.storyboard */; };
 		94182B631CC9139800194DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94182B621CC9139800194DF7 /* Assets.xcassets */; };
 		94182B661CC9139800194DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94182B641CC9139800194DF7 /* LaunchScreen.storyboard */; };
@@ -60,9 +67,16 @@
 		630013C51F9CD58500C68B29 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		630013C91F9CD62A00C68B29 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		630013CD1F9CD73700C68B29 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		631AFA0E1F9D0D2900867C15 /* MessagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesRepository.swift; sourceTree = "<group>"; };
+		631AFA101F9D0D7E00867C15 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		6381507E1F9D0F7D0040E7FB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		638150801F9D0FA80040E7FB /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		638150821F9D0FF40040E7FB /* ChatNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatNavigationController.swift; sourceTree = "<group>"; };
+		638150841F9D10F20040E7FB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		638150861F9D11210040E7FB /* SegueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueManager.swift; sourceTree = "<group>"; };
 		94182B581CC9139700194DF7 /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94182B5B1CC9139800194DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94182B5D1CC9139800194DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94182B5D1CC9139800194DF7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		94182B601CC9139800194DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94182B621CC9139800194DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94182B651CC9139800194DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,6 +135,105 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		631AFA081F9D0C2A00867C15 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				94E23D4D1CCA355800BAC252 /* Message.swift */,
+				630013BD1F9CBF2700C68B29 /* ChatService.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		631AFA091F9D0C2F00867C15 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				631AFA131F9D0E5100867C15 /* Utils */,
+				6381507B1F9D0F5A0040E7FB /* User Stories */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		631AFA0A1F9D0C4000867C15 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				630013BF1F9CCAD000C68B29 /* Promise.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		631AFA0B1F9D0C5E00867C15 /* Data Access */ = {
+			isa = PBXGroup;
+			children = (
+				630013BB1F9CBF1800C68B29 /* RequestBuilder.swift */,
+				630013B91F9CBEF600C68B29 /* NetworkSession.swift */,
+				631AFA0E1F9D0D2900867C15 /* MessagesRepository.swift */,
+				631AFA101F9D0D7E00867C15 /* UserRepository.swift */,
+			);
+			path = "Data Access";
+			sourceTree = "<group>";
+		};
+		631AFA121F9D0E4200867C15 /* Chat Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				94E23D491CCA20CA00BAC252 /* FriendChatBubble.xib */,
+				630013C31F9CD39B00C68B29 /* UserChatBubble.xib */,
+				94E23D4B1CCA260700BAC252 /* ChatBubble.swift */,
+			);
+			path = "Chat Bubble";
+			sourceTree = "<group>";
+		};
+		631AFA131F9D0E5100867C15 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				630013C11F9CCAEA00C68B29 /* ImageLoader.swift */,
+				630013C51F9CD58500C68B29 /* ListView.swift */,
+				630013B31F9CA98A00C68B29 /* IBInspectable.swift */,
+				630013B51F9CB9C200C68B29 /* KeyboardObserver.swift */,
+				638150861F9D11210040E7FB /* SegueManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		631AFA141F9D0E7000867C15 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				94182B5B1CC9139800194DF7 /* AppDelegate.swift */,
+				94182B641CC9139800194DF7 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6381507B1F9D0F5A0040E7FB /* User Stories */ = {
+			isa = PBXGroup;
+			children = (
+				94182B5F1CC9139800194DF7 /* Main.storyboard */,
+				638150841F9D10F20040E7FB /* RootViewController.swift */,
+				6381507D1F9D0F680040E7FB /* Chat */,
+				6381507C1F9D0F630040E7FB /* Login */,
+			);
+			path = "User Stories";
+			sourceTree = "<group>";
+		};
+		6381507C1F9D0F630040E7FB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				94182B5D1CC9139800194DF7 /* LoginViewController.swift */,
+				6381507E1F9D0F7D0040E7FB /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6381507D1F9D0F680040E7FB /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				638150801F9D0FA80040E7FB /* Chat.storyboard */,
+				638150821F9D0FF40040E7FB /* ChatNavigationController.swift */,
+				94182B891CC9371A00194DF7 /* ChatViewController.swift */,
+				631AFA121F9D0E4200867C15 /* Chat Bubble */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		94182B4F1CC9139700194DF7 = {
 			isa = PBXGroup;
 			children = (
@@ -145,26 +258,14 @@
 		94182B5A1CC9139800194DF7 /* ChatBot */ = {
 			isa = PBXGroup;
 			children = (
+				631AFA141F9D0E7000867C15 /* Application */,
+				631AFA0A1F9D0C4000867C15 /* Utils */,
+				631AFA0B1F9D0C5E00867C15 /* Data Access */,
+				631AFA091F9D0C2F00867C15 /* User Interface */,
+				631AFA081F9D0C2A00867C15 /* Domain */,
 				630013CC1F9CD73700C68B29 /* Generated */,
-				94182B5B1CC9139800194DF7 /* AppDelegate.swift */,
-				94182B891CC9371A00194DF7 /* ChatViewController.swift */,
-				630013B91F9CBEF600C68B29 /* NetworkSession.swift */,
-				630013BB1F9CBF1800C68B29 /* RequestBuilder.swift */,
-				630013BD1F9CBF2700C68B29 /* ChatService.swift */,
-				94182B5D1CC9139800194DF7 /* ViewController.swift */,
-				630013B31F9CA98A00C68B29 /* IBInspectable.swift */,
-				630013B51F9CB9C200C68B29 /* KeyboardObserver.swift */,
-				94182B5F1CC9139800194DF7 /* Main.storyboard */,
 				94182B621CC9139800194DF7 /* Assets.xcassets */,
-				94182B641CC9139800194DF7 /* LaunchScreen.storyboard */,
 				94182B671CC9139800194DF7 /* Info.plist */,
-				94E23D491CCA20CA00BAC252 /* FriendChatBubble.xib */,
-				630013C31F9CD39B00C68B29 /* UserChatBubble.xib */,
-				94E23D4B1CCA260700BAC252 /* ChatBubble.swift */,
-				94E23D4D1CCA355800BAC252 /* Message.swift */,
-				630013BF1F9CCAD000C68B29 /* Promise.swift */,
-				630013C11F9CCAEA00C68B29 /* ImageLoader.swift */,
-				630013C51F9CD58500C68B29 /* ListView.swift */,
 			);
 			path = ChatBot;
 			sourceTree = "<group>";
@@ -296,8 +397,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638150811F9D0FA80040E7FB /* Chat.storyboard in Resources */,
 				630013C41F9CD39B00C68B29 /* UserChatBubble.xib in Resources */,
 				94182B661CC9139800194DF7 /* LaunchScreen.storyboard in Resources */,
+				6381507F1F9D0F7D0040E7FB /* Login.storyboard in Resources */,
 				94182B631CC9139800194DF7 /* Assets.xcassets in Resources */,
 				94182B611CC9139800194DF7 /* Main.storyboard in Resources */,
 				94E23D4A1CCA20CA00BAC252 /* FriendChatBubble.xib in Resources */,
@@ -357,8 +460,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94182B5E1CC9139800194DF7 /* ViewController.swift in Sources */,
+				94182B5E1CC9139800194DF7 /* LoginViewController.swift in Sources */,
 				630013CE1F9CD73700C68B29 /* R.generated.swift in Sources */,
+				638150851F9D10F20040E7FB /* RootViewController.swift in Sources */,
 				630013C61F9CD58500C68B29 /* ListView.swift in Sources */,
 				630013C01F9CCAD000C68B29 /* Promise.swift in Sources */,
 				630013C21F9CCAEA00C68B29 /* ImageLoader.swift in Sources */,
@@ -366,10 +470,14 @@
 				630013B61F9CB9C200C68B29 /* KeyboardObserver.swift in Sources */,
 				630013BE1F9CBF2700C68B29 /* ChatService.swift in Sources */,
 				630013BC1F9CBF1800C68B29 /* RequestBuilder.swift in Sources */,
+				638150831F9D0FF40040E7FB /* ChatNavigationController.swift in Sources */,
 				94182B8A1CC9371A00194DF7 /* ChatViewController.swift in Sources */,
+				638150871F9D11210040E7FB /* SegueManager.swift in Sources */,
 				94E23D4E1CCA355800BAC252 /* Message.swift in Sources */,
 				630013BA1F9CBEF600C68B29 /* NetworkSession.swift in Sources */,
 				94182B5C1CC9139800194DF7 /* AppDelegate.swift in Sources */,
+				631AFA0F1F9D0D2900867C15 /* MessagesRepository.swift in Sources */,
+				631AFA111F9D0D7E00867C15 /* UserRepository.swift in Sources */,
 				94E23D4C1CCA260700BAC252 /* ChatBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +584,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -524,6 +633,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -538,7 +648,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.chatbot.ChatBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -551,7 +660,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.chatbot.ChatBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -563,8 +671,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.chatbot.ChatBotTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatBot.app/ChatBot";
 			};
 			name = Debug;
@@ -577,8 +683,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.chatbot.ChatBotTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatBot.app/ChatBot";
 			};
 			name = Release;
@@ -590,8 +694,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.chatbot.ChatBotUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = ChatBot;
 			};
 			name = Debug;
@@ -603,8 +705,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.chatbot.ChatBotUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = ChatBot;
 			};
 			name = Release;
