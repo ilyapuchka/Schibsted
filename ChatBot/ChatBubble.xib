@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,35 +20,66 @@
                 <rect key="frame" x="0.0" y="0.0" width="363" height="87.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xm9-iz-3qn">
-                        <rect key="frame" x="8" y="8" width="347" height="71.5"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xm9-iz-3qn">
+                        <rect key="frame" x="8" y="8" width="297" height="71.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoN-91-nTX">
-                                <rect key="frame" x="0.0" y="0.0" width="290" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoN-91-nTX">
+                                <rect key="frame" x="8" y="8" width="281" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nat-XT-9g6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nat-XT-9g6">
                                 <rect key="frame" x="0.0" y="45" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="fTY-jE-6sr"/>
+                                    <constraint firstAttribute="width" secondItem="nat-XT-9g6" secondAttribute="height" multiplier="1:1" id="tKr-Ij-Wi7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPm-fs-6pl">
-                                <rect key="frame" x="38" y="49" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPm-fs-6pl">
+                                <rect key="frame" x="38" y="52.5" width="31" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.3294117647" green="0.60784313729999995" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nat-XT-9g6" firstAttribute="leading" secondItem="Xm9-iz-3qn" secondAttribute="leading" id="DcG-wC-CNE"/>
+                            <constraint firstAttribute="bottom" secondItem="nat-XT-9g6" secondAttribute="bottom" constant="-3.5" id="Q6e-Kh-EHq"/>
+                            <constraint firstItem="cPm-fs-6pl" firstAttribute="leading" secondItem="nat-XT-9g6" secondAttribute="trailing" constant="8" id="TuE-l1-73d"/>
+                            <constraint firstAttribute="trailing" secondItem="SoN-91-nTX" secondAttribute="trailing" constant="8" id="agI-ed-Z5n"/>
+                            <constraint firstItem="cPm-fs-6pl" firstAttribute="centerY" secondItem="nat-XT-9g6" secondAttribute="centerY" id="cuh-RG-JNb"/>
+                            <constraint firstItem="SoN-91-nTX" firstAttribute="leading" secondItem="Xm9-iz-3qn" secondAttribute="leading" constant="8" id="ecO-15-eza"/>
+                            <constraint firstItem="nat-XT-9g6" firstAttribute="top" secondItem="SoN-91-nTX" secondAttribute="bottom" id="fSC-sO-pPP"/>
+                            <constraint firstItem="SoN-91-nTX" firstAttribute="top" secondItem="Xm9-iz-3qn" secondAttribute="top" constant="8" id="jvX-id-ObB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Xm9-iz-3qn" secondAttribute="trailing" constant="50" id="6DZ-CC-kdm"/>
+                    <constraint firstItem="Xm9-iz-3qn" firstAttribute="top" secondItem="6fc-CV-zV1" secondAttribute="topMargin" id="DVW-IF-Wfx"/>
+                    <constraint firstItem="Xm9-iz-3qn" firstAttribute="leading" secondItem="6fc-CV-zV1" secondAttribute="leadingMargin" id="evc-eL-rxx"/>
+                    <constraint firstItem="Xm9-iz-3qn" firstAttribute="bottom" secondItem="6fc-CV-zV1" secondAttribute="bottomMargin" id="nuq-tc-4PB"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="background" destination="6fc-CV-zV1" id="dni-bd-nhN"/>
                 <outlet property="bubbleContent" destination="SoN-91-nTX" id="Sxy-jz-nCX"/>
                 <outlet property="userImage" destination="nat-XT-9g6" id="4V9-oE-al9"/>
                 <outlet property="userName" destination="cPm-fs-6pl" id="hpb-pn-M2P"/>

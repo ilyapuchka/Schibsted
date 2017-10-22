@@ -12,6 +12,8 @@ class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
+//            tableView.estimatedRowHeight = 150
+//            tableView.rowHeight = UITableViewAutomaticDimension
             tableView.register(UINib(nibName: "ChatBubble", bundle: nil), forCellReuseIdentifier: "ChatBubble")
         }
     }
@@ -30,9 +32,6 @@ class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     }
 
     //MARK - UITableViewDataSource
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.messages.count
