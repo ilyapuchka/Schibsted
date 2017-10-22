@@ -96,7 +96,7 @@ extension ChatViewController {
         guard let text = inputTextView.textView.text, !text.isEmpty else { return }
         
         inputTextView.textView.text = ""
-        insertMessage(Message(username: service.currentUser()!, time: "now", userImageURL: nil, content: text),
+        insertMessage(Message(username: service.currentUser()!, time: Date(), userImageURL: nil, content: text),
                       at: IndexPath(row: messages.count, section: 0))
     }
     
@@ -113,7 +113,7 @@ extension ChatViewController {
 extension ChatViewController: UITextViewDelegate {
     
     var inputViewHeight: CGFloat {
-        return inputTextView.superview?.frame.height ?? 0
+        return (inputTextView.superview?.frame.height ?? 0) + 60
     }
 
     func textViewDidChange(_ textView: UITextView) {

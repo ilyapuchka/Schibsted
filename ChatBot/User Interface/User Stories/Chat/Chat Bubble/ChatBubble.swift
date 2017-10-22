@@ -62,12 +62,14 @@ protocol SenderType {
 }
 enum UserSenderType: SenderType {
     static func formatUserName(message: Message) -> String {
-        return message.time
+        guard let time = message.time else { return "" }
+        return messageTimeViewFormatter.string(from: time)
     }
 }
 enum FriendSenderType: SenderType {
     static func formatUserName(message: Message) -> String {
-        return "\(message.username) - \(message.time)"
+        guard let time = message.time else { return "\(message.username)" }
+        return "\(message.username) - \(messageTimeViewFormatter.string(from: time))"
     }
 }
 
@@ -84,3 +86,11 @@ class ChatBubbleViewModel<Sender: SenderType> {
     }
 
 }
+
+let messageTimeViewFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .none
+    formatter.timeStyle = .short
+    return formatter
+}()
+

@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4nd-sO-GKZ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="513"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="499"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -87,7 +87,7 @@
                             <constraint firstItem="A6W-CO-Ejx" firstAttribute="top" secondItem="0JE-fN-DKj" secondAttribute="bottom" id="aVo-3L-w2x"/>
                             <constraint firstItem="0JE-fN-DKj" firstAttribute="leading" secondItem="Yzo-Ye-iiH" secondAttribute="leading" id="cbj-dL-nxb"/>
                             <constraint firstItem="0JE-fN-DKj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0WE-hA-Nnl" secondAttribute="bottom" constant="10" id="iit-Yc-IWA"/>
-                            <constraint firstItem="A6W-CO-Ejx" firstAttribute="top" secondItem="4nd-sO-GKZ" secondAttribute="bottom" constant="46" id="tEO-W1-T07"/>
+                            <constraint firstItem="A6W-CO-Ejx" firstAttribute="top" secondItem="4nd-sO-GKZ" secondAttribute="bottom" constant="60" id="tEO-W1-T07"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z2O-76-bN2"/>
                     </view>
