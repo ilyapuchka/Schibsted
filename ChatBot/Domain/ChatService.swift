@@ -53,12 +53,3 @@ protocol UserRepository {
     func currentUser() -> String?
 
 }
-
-extension UserDefaults {
-    
-    var username: String? {
-        get { return value(forKey: #function) as? String }
-        set { setValue(newValue, forKey: #function) }
-    }
-    
-}

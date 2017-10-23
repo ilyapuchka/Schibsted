@@ -26,12 +26,23 @@
 		638150871F9D11210040E7FB /* SegueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638150861F9D11210040E7FB /* SegueManager.swift */; };
 		638150891F9D365F0040E7FB /* NextGrowingTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638150881F9D365F0040E7FB /* NextGrowingTextView.framework */; };
 		643620E81F9DF310007B04FB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643620E71F9DF302007B04FB /* R.generated.swift */; };
+		643620EF1F9DFB34007B04FB /* RequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643620EE1F9DFB34007B04FB /* RequestBuilderTests.swift */; };
+		643620F11F9DFBAB007B04FB /* NetworkSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643620F01F9DFBAB007B04FB /* NetworkSessionTests.swift */; };
+		643620F31F9DFC16007B04FB /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630013C91F9CD62A00C68B29 /* Rswift.framework */; };
+		643620F61F9DFC60007B04FB /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 643620F51F9DFC5D007B04FB /* chat.json */; };
+		643620FB1F9DFC6D007B04FB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643620F91F9DFC6D007B04FB /* R.generated.swift */; };
+		643620FE1F9DFCB4007B04FB /* Difference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643620FD1F9DFCB4007B04FB /* Difference.swift */; };
+		643621001F9DFD21007B04FB /* MessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643620FF1F9DFD21007B04FB /* MessageTests.swift */; };
+		643621021F9DFFB5007B04FB /* message.json in Resources */ = {isa = PBXBuildFile; fileRef = 643621011F9DFFB5007B04FB /* message.json */; };
+		643621041F9E0061007B04FB /* MessagesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643621031F9E0061007B04FB /* MessagesRepositoryTests.swift */; };
+		643621061F9E0089007B04FB /* FileNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643621051F9E0089007B04FB /* FileNetworkSession.swift */; };
+		643621081F9E02B9007B04FB /* UserRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643621071F9E02B9007B04FB /* UserRepositoryTests.swift */; };
+		6436210A1F9E047E007B04FB /* ChatBubbleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643621091F9E047E007B04FB /* ChatBubbleViewModelTests.swift */; };
 		94182B5C1CC9139800194DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5B1CC9139800194DF7 /* AppDelegate.swift */; };
 		94182B5E1CC9139800194DF7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B5D1CC9139800194DF7 /* LoginViewController.swift */; };
 		94182B611CC9139800194DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94182B5F1CC9139800194DF7 /* Main.storyboard */; };
 		94182B631CC9139800194DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94182B621CC9139800194DF7 /* Assets.xcassets */; };
 		94182B661CC9139800194DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94182B641CC9139800194DF7 /* LaunchScreen.storyboard */; };
-		94182B711CC9139800194DF7 /* ChatBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B701CC9139800194DF7 /* ChatBotTests.swift */; };
 		94182B7C1CC9139800194DF7 /* ChatBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B7B1CC9139800194DF7 /* ChatBotUITests.swift */; };
 		94182B8A1CC9371A00194DF7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182B891CC9371A00194DF7 /* ChatViewController.swift */; };
 		94E23D4A1CCA20CA00BAC252 /* FriendChatBubble.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E23D491CCA20CA00BAC252 /* FriendChatBubble.xib */; };
@@ -76,6 +87,17 @@
 		638150861F9D11210040E7FB /* SegueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueManager.swift; sourceTree = "<group>"; };
 		638150881F9D365F0040E7FB /* NextGrowingTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NextGrowingTextView.framework; path = Carthage/Build/iOS/NextGrowingTextView.framework; sourceTree = "<group>"; };
 		643620E71F9DF302007B04FB /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		643620EE1F9DFB34007B04FB /* RequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderTests.swift; sourceTree = "<group>"; };
+		643620F01F9DFBAB007B04FB /* NetworkSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionTests.swift; sourceTree = "<group>"; };
+		643620F51F9DFC5D007B04FB /* chat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chat.json; sourceTree = "<group>"; };
+		643620F91F9DFC6D007B04FB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		643620FD1F9DFCB4007B04FB /* Difference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difference.swift; sourceTree = "<group>"; };
+		643620FF1F9DFD21007B04FB /* MessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTests.swift; sourceTree = "<group>"; };
+		643621011F9DFFB5007B04FB /* message.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = message.json; sourceTree = "<group>"; };
+		643621031F9E0061007B04FB /* MessagesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesRepositoryTests.swift; sourceTree = "<group>"; };
+		643621051F9E0089007B04FB /* FileNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNetworkSession.swift; sourceTree = "<group>"; };
+		643621071F9E02B9007B04FB /* UserRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTests.swift; sourceTree = "<group>"; };
+		643621091F9E047E007B04FB /* ChatBubbleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleViewModelTests.swift; sourceTree = "<group>"; };
 		94182B581CC9139700194DF7 /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94182B5B1CC9139800194DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94182B5D1CC9139800194DF7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +106,6 @@
 		94182B651CC9139800194DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94182B671CC9139800194DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94182B6C1CC9139800194DF7 /* ChatBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		94182B701CC9139800194DF7 /* ChatBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotTests.swift; sourceTree = "<group>"; };
 		94182B721CC9139800194DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94182B771CC9139800194DF7 /* ChatBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94182B7B1CC9139800194DF7 /* ChatBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotUITests.swift; sourceTree = "<group>"; };
@@ -109,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643620F31F9DFC16007B04FB /* Rswift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +260,59 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		643620F41F9DFC5D007B04FB /* Payload */ = {
+			isa = PBXGroup;
+			children = (
+				643620F51F9DFC5D007B04FB /* chat.json */,
+				643621011F9DFFB5007B04FB /* message.json */,
+			);
+			path = Payload;
+			sourceTree = "<group>";
+		};
+		643620F71F9DFC6D007B04FB /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				643620F91F9DFC6D007B04FB /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		643620FC1F9DFCA8007B04FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				643620FD1F9DFCB4007B04FB /* Difference.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6436210B1F9E066F007B04FB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				643620FF1F9DFD21007B04FB /* MessageTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6436210C1F9E0699007B04FB /* Data Access */ = {
+			isa = PBXGroup;
+			children = (
+				643621031F9E0061007B04FB /* MessagesRepositoryTests.swift */,
+				643621071F9E02B9007B04FB /* UserRepositoryTests.swift */,
+				643621051F9E0089007B04FB /* FileNetworkSession.swift */,
+				643620F01F9DFBAB007B04FB /* NetworkSessionTests.swift */,
+				643620EE1F9DFB34007B04FB /* RequestBuilderTests.swift */,
+			);
+			path = "Data Access";
+			sourceTree = "<group>";
+		};
+		6436210D1F9E06AC007B04FB /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				643621091F9E047E007B04FB /* ChatBubbleViewModelTests.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
 		94182B4F1CC9139700194DF7 = {
 			isa = PBXGroup;
 			children = (
@@ -277,7 +352,12 @@
 		94182B6F1CC9139800194DF7 /* ChatBotTests */ = {
 			isa = PBXGroup;
 			children = (
-				94182B701CC9139800194DF7 /* ChatBotTests.swift */,
+				643620FC1F9DFCA8007B04FB /* Utils */,
+				643620F71F9DFC6D007B04FB /* Generated */,
+				643620F41F9DFC5D007B04FB /* Payload */,
+				6436210B1F9E066F007B04FB /* Domain */,
+				6436210C1F9E0699007B04FB /* Data Access */,
+				6436210D1F9E06AC007B04FB /* User Interface */,
 				94182B721CC9139800194DF7 /* Info.plist */,
 			);
 			path = ChatBotTests;
@@ -318,6 +398,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94182B831CC9139800194DF7 /* Build configuration list for PBXNativeTarget "ChatBotTests" */;
 			buildPhases = (
+				643620F21F9DFBFE007B04FB /* Run R.swift */,
 				94182B681CC9139800194DF7 /* Sources */,
 				94182B691CC9139800194DF7 /* Frameworks */,
 				94182B6A1CC9139800194DF7 /* Resources */,
@@ -415,6 +496,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643620F61F9DFC60007B04FB /* chat.json in Resources */,
+				643621021F9DFFB5007B04FB /* message.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +541,20 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		643620F21F9DFBFE007B04FB /* Run R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run R.swift";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"Utils/Rswift/rswift\" generate \"$SRCROOT/$TARGET_NAME/Generated\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -491,7 +588,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94182B711CC9139800194DF7 /* ChatBotTests.swift in Sources */,
+				643621041F9E0061007B04FB /* MessagesRepositoryTests.swift in Sources */,
+				643621061F9E0089007B04FB /* FileNetworkSession.swift in Sources */,
+				643621001F9DFD21007B04FB /* MessageTests.swift in Sources */,
+				643620FE1F9DFCB4007B04FB /* Difference.swift in Sources */,
+				6436210A1F9E047E007B04FB /* ChatBubbleViewModelTests.swift in Sources */,
+				643620F11F9DFBAB007B04FB /* NetworkSessionTests.swift in Sources */,
+				643620EF1F9DFB34007B04FB /* RequestBuilderTests.swift in Sources */,
+				643621081F9E02B9007B04FB /* UserRepositoryTests.swift in Sources */,
+				643620FB1F9DFC6D007B04FB /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

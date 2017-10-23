@@ -29,3 +29,12 @@ class DefaultsUserRepository: UserRepository {
         return userDefaults.username
     }
 }
+
+extension UserDefaults {
+    
+    var username: String? {
+        get { return value(forKey: #function) as? String }
+        set { setValue(newValue, forKey: #function) }
+    }
+    
+}
