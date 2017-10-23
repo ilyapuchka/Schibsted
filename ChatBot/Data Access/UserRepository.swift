@@ -10,31 +10,38 @@ import Foundation
 
 class DefaultsUserRepository: UserRepository {
     let userDefaults: UserDefaults
+    private var username: String?
     
     init(userDefaults: UserDefaults) {
         self.userDefaults = userDefaults
     }
     
     func login(username: String) {
+        self.username = username
         userDefaults.username = username
-        userDefaults.synchronize()
     }
     
     func logout() {
+        self.username = nil
         userDefaults.username = nil
-        userDefaults.synchronize()
     }
     
     func currentUser() -> String? {
-        return userDefaults.username
+        return username ?? userDefaults.username
     }
 }
 
 extension UserDefaults {
     
     var username: String? {
-        get { return value(forKey: #function) as? String }
-        set { setValue(newValue, forKey: #function) }
+        get {
+            guard let value = value(forKey: #function) as? String, !value.isEmpty else { return nil }
+            return value
+        }
+        set {
+            setValue(newValue, forKey: #function)
+            synchronize()
+        }
     }
     
 }
