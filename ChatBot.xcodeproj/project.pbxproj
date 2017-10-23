@@ -298,9 +298,9 @@
 			children = (
 				643621031F9E0061007B04FB /* MessagesRepositoryTests.swift */,
 				643621071F9E02B9007B04FB /* UserRepositoryTests.swift */,
-				643621051F9E0089007B04FB /* FileNetworkSession.swift */,
 				643620F01F9DFBAB007B04FB /* NetworkSessionTests.swift */,
 				643620EE1F9DFB34007B04FB /* RequestBuilderTests.swift */,
+				6436210E1F9E2211007B04FB /* Utils */,
 			);
 			path = "Data Access";
 			sourceTree = "<group>";
@@ -311,6 +311,14 @@
 				643621091F9E047E007B04FB /* ChatBubbleViewModelTests.swift */,
 			);
 			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		6436210E1F9E2211007B04FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				643621051F9E0089007B04FB /* FileNetworkSession.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		94182B4F1CC9139700194DF7 = {

@@ -31,12 +31,3 @@ extension URLRequest {
     }
 
 }
-
-extension URLRequest {
-    static func chatsRequest() -> URLRequest {
-        return request(URLComponents().with {
-            $0.path = "/chat.json"
-        })
-    }
-}
-

@@ -13,6 +13,8 @@ class RequestBuilderTests: XCTestCase {
 
     func testThatItBuildsChatsRequest() {
         let request = URLRequest.chatsRequest()
+        
+        XCTAssertEqual(request.httpMethod, "GET")
         XCTAssertEqual(request.url?.scheme, "https")
         XCTAssertEqual(request.url?.host, "s3-eu-west-1.amazonaws.com")
         XCTAssertEqual(request.url?.path, "/rocket-interview/chat.json")

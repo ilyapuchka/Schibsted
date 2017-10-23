@@ -25,3 +25,11 @@ class NetworkMessagesRepository: MessagesRepository {
         }
     }
 }
+
+extension URLRequest {
+    static func chatsRequest() -> URLRequest {
+        return request(URLComponents().with {
+            $0.path = "/chat.json"
+        })
+    }
+}
